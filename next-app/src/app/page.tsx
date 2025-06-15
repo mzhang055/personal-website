@@ -1,10 +1,12 @@
 import Image from "next/image";
+import MenuBar from "../components/MenuBar";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
+      <MenuBar />
       <div className="w-full relative">
-        <div className="absolute top-[25%] left-0 right-0 text-center z-10">
+        <div className="absolute top-[20%] left-0 right-0 text-center z-10">
           <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-semi-bold font-jetbrains-mono mb-0">hi im michelle</h1>
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mt-0">peek into my brain</h1>
         </div>
