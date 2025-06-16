@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MenuBar from "../components/MenuBar";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -25,28 +26,28 @@ export default function Home() {
           alt="Character 1"
           width={250}
           height={250}
-          className="absolute bottom-[70%] left-[3%] w-[25%] h-auto"
+          className="absolute bottom-[70%] left-[3%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300"
         />
         <Image
           src="/char3.png"
           alt="Character 3"
           width={200}
           height={200}
-          className="absolute bottom-[50%] left-[23%] w-[25%] h-auto"
+          className="absolute bottom-[50%] left-[23%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300"
         />
         <Image
           src="/char2.png"
           alt="Character 2"
           width={400}
           height={400}
-          className="absolute bottom-[75%] right-[30%] w-[30%] h-auto"
+          className="absolute bottom-[75%] right-[30%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300"
         />
         <Image
           src="/char4.png"
           alt="Character 4"
           width={250}
           height={250}
-          className="absolute bottom-[55%] right-[5%] w-[30%] h-auto"
+          className="absolute bottom-[55%] right-[5%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300"
         />
       </div>
       <div className="flex-1 w-full relative flex items-center justify-center min-h-[50vh]">
@@ -62,6 +63,36 @@ export default function Home() {
             />
             <span className="ml-[-0.2em]">jects</span>
           </h1>
+        </div>
+      </div>
+      
+      {/* Projects Section */}
+      <div className="w-full max-w-7xl mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ProjectCard
+            title="Project One"
+            description="Description of your first project. What technologies did you use? What problems did it solve?"
+            technologies={["React", "Node.js"]}
+            demoUrl="https://demo.example.com"
+            githubUrl="https://github.com/username/project"
+            imageUrl="/mock.jpg"
+            stickers={{
+              topLeft: true,
+              bottomRight: true
+            }}
+          />
+          <ProjectCard
+            title="Project Two"
+            description="Description of your second project. What was your role? What were the key features?"
+            technologies={["Next.js", "TypeScript"]}
+            demoUrl="https://demo.example.com"
+            githubUrl="https://github.com/username/project"
+            imageUrl="/mock.jpg"
+            stickers={{
+              topRight: true,
+              bottomLeft: true
+            }}
+          />
         </div>
       </div>
     </main>
