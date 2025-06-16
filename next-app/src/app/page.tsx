@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <div className="flex-1 w-full relative flex items-center justify-center min-h-[50vh]">
+      <div className="w-full relative flex items-center justify-center py-16">
         <div className="text z-10 relative flex items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mb-0 flex items-center">
             <span className="mr-[-0.2em]">pr</span>
@@ -98,18 +98,18 @@ export default function Home() {
       </div>
 
       {/* About Me Section */}
-      <div className="flex-1 w-full relative flex items-center justify-center min-h-[50vh]">
+      <div className="w-full relative flex items-center justify-center py-16">
         <div className="text z-10 relative flex items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mb-0 flex items-center">
-            <span className="mr-[-0.2em]">ab</span>
+            <span className="mr-[-0.3em]">ab</span>
             <Image
-              src="/char2.png"
-              alt="Character 2"
+              src="/char4.png"
+              alt="Character 4"
               width={250}
               height={250}
               className="w-[1.3em] h-auto hover:rotate-12 transition-transform duration-300"
             />
-            <span className="ml-[-0.2em]">ut</span>
+            <span className="ml-[-0.1em]">ut</span>
           </h1>
         </div>
       </div>
