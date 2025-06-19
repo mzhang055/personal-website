@@ -119,11 +119,10 @@ export default function Home() {
           {/* About Me Text */}
           <div className="space-y-6">
             <p className="text-lg font-jetbrains-mono">
-              Hi! I'm Michelle, a passionate developer who loves creating beautiful and functional web experiences. 
-              I specialize in building modern web applications using React and Next.js.
+              Hi! I'm Michelle, a 2nd year CS student at UofT. 
             </p>
             <p className="text-lg font-jetbrains-mono">
-              When I'm not coding, you can find me [your interests/hobbies]. I believe in [your philosophy/approach to development].
+              I'm passionate about software development, UI/UX design, and most importantly, eating yummy food.
             </p>
             <p className="text-lg font-jetbrains-mono">
               I'm always excited to take on new challenges and learn new technologies. Let's connect and create something amazing together!
@@ -150,7 +149,7 @@ export default function Home() {
           href="mailto:your.email@example.com"
           className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-jetbrains-mono hover:opacity-80 transition-opacity duration-300"
         >
-          Contact Me →
+          contact me →
         </a>
       </div>
 
@@ -159,7 +158,7 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm font-jetbrains-mono">
-              © 2024 Michelle. All rights reserved.
+              © 2024 Michelle. made with -`♡´-
             </div>
             <div className="flex gap-6">
               <a 
