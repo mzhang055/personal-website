@@ -86,8 +86,7 @@ export default function Home() {
             title="stocked"
             description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
             technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
-            demoUrl = "https://devpost.com/software/nightlight-64g8wc"
-            githubUrl="https://github.com/samanthavmac/nightlight"
+            githubUrl="https://github.com/mzhang055/Stocked"
             imageUrl="/stocked.png"
             stickers={{
               //topRight: true,
