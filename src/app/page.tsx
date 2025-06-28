@@ -71,24 +71,36 @@ export default function Home() {
       <div className="w-full max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
-            title="Project One"
-            description="Description of your first project. What technologies did you use? What problems did it solve?"
-            technologies={["React", "Node.js"]}
-            demoUrl="https://demo.example.com"
-            githubUrl="https://github.com/username/project"
-            imageUrl="/mock.jpg"
+            title="mock it"
+            description="Instantly generate LaTeX mock tests from your worksheets or tests."
+            technologies={["Typescript", "Nexe.js", "Python", "Docker", "Google Cloud"]}
+            demoUrl="https://simplymockit.com"
+            githubUrl="https://github.com/mzhang055/mockmate"
+            imageUrl="/mockit.png"
             stickers={{
               topLeft: true,
               //bottomRight: true
             }}
           />
           <ProjectCard
-            title="Project Two"
-            description="Description of your second project. What was your role? What were the key features?"
-            technologies={["Next.js", "TypeScript"]}
-            demoUrl="https://demo.example.com"
-            githubUrl="https://github.com/username/project"
-            imageUrl="/mock.jpg"
+            title="stocked"
+            description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
+            technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
+            demoUrl = "https://devpost.com/software/nightlight-64g8wc"
+            githubUrl="https://github.com/samanthavmac/nightlight"
+            imageUrl="/stocked.png"
+            stickers={{
+              //topRight: true,
+              bottomRight: true
+            }}
+          />
+          <ProjectCard
+            title="nightlight"
+            description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
+            technologies={["HTML", "CSS", "JS", "TailwindCSS"]}
+            demoUrl = "https://devpost.com/software/nightlight-64g8wc"
+            githubUrl="https://github.com/samanthavmac/nightlight"
+            imageUrl="/nightlight.png"
             stickers={{
               //topRight: true,
               bottomRight: true
@@ -133,7 +145,7 @@ export default function Home() {
           <div className="relative w-full aspect-square">
             <div className="absolute inset-0 border-2 border-black rounded-lg">
               <Image
-                src="/mock.jpg"
+                src="/me.jpg"
                 alt="Michelle"
                 fill
                 className="object-cover rounded-lg"
@@ -146,7 +158,7 @@ export default function Home() {
       {/* Contact Button */}
       <div className="w-full flex justify-center pb-16">
         <a 
-          href="mailto:your.email@example.com"
+          href="mailto:michellexy.zhang@mail.utoronto.ca"
           className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-jetbrains-mono hover:opacity-80 transition-opacity duration-300"
         >
           contact me →
@@ -162,7 +174,7 @@ export default function Home() {
             </div>
             <div className="flex gap-6">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/mzhang055" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sm font-jetbrains-mono hover:underline"
@@ -170,7 +182,7 @@ export default function Home() {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://linkedin.com/in/mzhang055" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sm font-jetbrains-mono hover:underline"
@@ -178,7 +190,7 @@ export default function Home() {
                 LinkedIn
               </a>
               <a 
-                href="https://twitter.com/yourusername" 
+                href="https://twitter.com/michellexyzhang" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sm font-jetbrains-mono hover:underline"
