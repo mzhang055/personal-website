@@ -137,7 +137,7 @@ export default function Home() {
               I&apos;m passionate about software development, UI/UX design, and most importantly, eating yummy food.
             </p>
             <p className="text-lg font-jetbrains-mono">
-            I&apos;m always excited to take on new challenges and learn new technologies. Let's connect and create something amazing together!
+            I&apos;m always excited to take on new challenges and learn new technologies. Let&apos;s connect and create something amazing together!
             </p>
           </div>
           
