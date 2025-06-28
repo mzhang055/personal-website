@@ -169,7 +169,7 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm font-jetbrains-mono">
-              © 2024 Michelle. made with -`♡´-
+              © 2025 Michelle. made with -`♡´-
             </div>
             <div className="flex gap-6">
               <a 
