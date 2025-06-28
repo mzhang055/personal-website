@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <div className="w-full relative flex items-center justify-center py-16">
+      <div id="projects" className="w-full relative flex items-center justify-center py-16">
         <div className="text z-10 relative flex items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mb-0 flex items-center">
             <span className="mr-[-0.2em]">pr</span>
@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       {/* About Me Section */}
-      <div className="w-full relative flex items-center justify-center py-16">
+      <div id="about" className="w-full relative flex items-center justify-center py-16">
         <div className="text z-10 relative flex items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mb-0 flex items-center">
             <span className="mr-[-0.3em]">ab</span>
