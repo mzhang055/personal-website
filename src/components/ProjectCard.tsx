@@ -74,11 +74,12 @@ export default function ProjectCard({
       )}
 
       {imageUrl && (
-        <div className="mb-4 relative w-full h-90">
+        <div className="mb-4 relative w-full h-48 sm:h-64 md:h-72">
           <Image
             src={imageUrl}
             alt={title}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover rounded-lg"
           />
         </div>
