@@ -131,13 +131,13 @@ export default function Home() {
           {/* About Me Text */}
           <div className="space-y-6">
             <p className="text-lg font-jetbrains-mono">
-              Hi! I'm Michelle, a 2nd year CS student at UofT. 
+              Hi! I&apos;m Michelle, a 2nd year CS student at UofT. 
             </p>
             <p className="text-lg font-jetbrains-mono">
-              I'm passionate about software development, UI/UX design, and most importantly, eating yummy food.
+              I&apos;m passionate about software development, UI/UX design, and most importantly, eating yummy food.
             </p>
             <p className="text-lg font-jetbrains-mono">
-              I'm always excited to take on new challenges and learn new technologies. Let's connect and create something amazing together!
+            I&apos;m always excited to take on new challenges and learn new technologies. Let's connect and create something amazing together!
             </p>
           </div>
           
