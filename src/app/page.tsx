@@ -100,7 +100,7 @@ export default function Home() {
             githubUrl="https://github.com/mzhang055/UniVerse"
             imageUrl="/universe.png"
             stickers={{
-              bottomRight: true
+              bottomLeft: true
             }}
           />
 
@@ -113,7 +113,7 @@ export default function Home() {
             githubUrl="https://github.com/samanthavmac/nightlight"
             imageUrl="/nightlight.png"
             stickers={{
-              topLeft: true,
+              bottomRight: true,
             }}
           />
         </div>
@@ -144,7 +144,7 @@ export default function Home() {
               Hi! I&apos;m Michelle, a 2nd year CS student at UofT. 
             </p>
             <p className="text-lg font-jetbrains-mono">
-              I&apos;m passionate about software development, UI/UX design, and most importantly, eating yummy food.
+              I&apos;m passionate about software development, UI/UX design, and trying new food around the city!
             </p>
             <p className="text-lg font-jetbrains-mono">
             I&apos;m always excited to take on new challenges and learn new technologies. Let&apos;s connect and create something amazing together!

@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 interface ProjectCardProps {
   title: string;
@@ -33,7 +35,7 @@ export default function ProjectCard({
     <div className="bg-white/5 p-6 rounded-lg border-2 border-black relative">
       {/* Character Stickers */}
       {stickers.topLeft && (
-        <div className="absolute -top-12 -left-12 w-32 h-32 z-10">
+        <div className="absolute -top-8 -left-8 w-20 h-20 z-10">
           <Image
             src="/char1.png"
             alt="Character 1"
@@ -43,7 +45,7 @@ export default function ProjectCard({
         </div>
       )}
       {stickers.topRight && (
-        <div className="absolute -top-12 -right-12 w-32 h-32 z-10">
+        <div className="absolute -top-8 -right-8 w-20 h-20 z-10">
           <Image
             src="/char2.png"
             alt="Character 2"
@@ -53,7 +55,7 @@ export default function ProjectCard({
         </div>
       )}
       {stickers.bottomLeft && (
-        <div className="absolute -bottom-12 -left-12 w-32 h-32 z-10">
+        <div className="absolute -bottom-8 -left-8 w-20 h-20 z-10">
           <Image
             src="/char3.png"
             alt="Character 3"
@@ -63,7 +65,7 @@ export default function ProjectCard({
         </div>
       )}
       {stickers.bottomRight && (
-        <div className="absolute -bottom-12 -right-12 w-32 h-32 z-10">
+        <div className="absolute -bottom-8 -right-8 w-20 h-20 z-10">
           <Image
             src="/char4.png"
             alt="Character 4"
@@ -84,39 +86,44 @@ export default function ProjectCard({
           />
         </div>
       )}
-      <h2 className="text-2xl font-jetbrains-mono font-semibold mb-4">{title}</h2>
-      <p className="text-gray-300 mb-4 font-jetbrains-mono">{description}</p>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-2xl font-jetbrains-mono font-semibold">{title}</h2>
+        <div className="flex gap-3 ml-4">
+          {demoUrl && (
+            <a
+              href={demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live Demo"
+              className="text-black hover:text-gray-700"
+            >
+              <FiExternalLink className="w-5 h-5" />
+            </a>
+          )}
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-black hover:text-gray-700"
+            >
+              <FiGithub className="w-5 h-5" />
+            </a>
+          )}
+        </div>
+      </div>
+      <p className="text-black mb-4 font-jetbrains-mono font-thin text-sm">{description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {technologies.map((tech, index) => (
           <span 
             key={index}
-            className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-jetbrains-mono"
+            className="px-3 py-1 rounded-full text-sm font-jetbrains-mono"
+            style={{ backgroundColor: '#f1e1ec', color: '#b289a5' }}
           >
             {tech}
           </span>
         ))}
-      </div>
-      <div className="flex gap-4">
-        {demoUrl && (
-          <a 
-            href={demoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-300 hover:text-blue-400 font-jetbrains-mono"
-          >
-            Live Demo →
-          </a>
-        )}
-        {githubUrl && (
-          <a 
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-300 hover:text-blue-400 font-jetbrains-mono"
-          >
-            GitHub →
-          </a>
-        )}
       </div>
     </div>
   );
