@@ -74,7 +74,7 @@ export default function Home() {
           <ProjectCard
             title="mock it"
             description="Instantly generate LaTeX mock tests from your worksheets or tests in &lt; 1 minute."
-            technologies={["Typescript", "Nexe.js", "Python", "Docker", "FastAPI", "Google Cloud"]}
+            technologies={["Typescript", "Next.js", "Python", "Docker", "FastAPI", "Google Cloud"]}
             demoUrl="https://simplymockit.com"
             githubUrl="https://github.com/mzhang055/mockmate"
             imageUrl="/mockit.png"
