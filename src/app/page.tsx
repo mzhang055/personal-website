@@ -73,36 +73,33 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
             title="mock it"
-            description="Instantly generate LaTeX mock tests from your worksheets or tests."
+            description="Instantly generate LaTeX mock tests from your worksheets or tests in &lt; 1 minute."
             technologies={["Typescript", "Nexe.js", "Python", "Docker", "Google Cloud"]}
             demoUrl="https://simplymockit.com"
             githubUrl="https://github.com/mzhang055/mockmate"
             imageUrl="/mockit.png"
             stickers={{
               topLeft: true,
-              //bottomRight: true
             }}
           />
           <ProjectCard
             title="stocked"
-            description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
+            description="A tool that provides personalized stock recommendations, insights into market trends, and projections of potential investment outcomes."
             technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
             githubUrl="https://github.com/mzhang055/Stocked"
             imageUrl="/stocked.png"
             stickers={{
-              //topRight: true,
-              bottomRight: true
+              topRight: true
             }}
           />
 
           <ProjectCard
             title="UniVerse"
-            description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
-            technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
+            description="A post-secondary planning app for high school students that offers personalized program recommendations, an interactive map of Ontario universities, grade tracking, and tools to explore programs and scholarships."
+            technologies={["Java", "Jsoup", "MySQL", "XAMPP"]}
             githubUrl="https://github.com/mzhang055/UniVerse"
             imageUrl="/universe.png"
             stickers={{
-              //topRight: true,
               bottomRight: true
             }}
           />
@@ -116,8 +113,7 @@ export default function Home() {
             githubUrl="https://github.com/samanthavmac/nightlight"
             imageUrl="/nightlight.png"
             stickers={{
-              //topRight: true,
-              bottomRight: true
+              topLeft: true,
             }}
           />
         </div>
