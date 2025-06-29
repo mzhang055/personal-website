@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 interface ProjectCardProps {
