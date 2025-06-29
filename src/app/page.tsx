@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <MenuBar />
-      <div className="flex-1 w-full relative flex items-center justify-center min-h-[50vh]">
+      <div id="home" className="flex-1 w-full relative flex items-center justify-center min-h-[50vh]">
         <div className="text-center z-10">
           <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-semi-bold font-jetbrains-mono mb-0">hi im michelle</h1>
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mt-0">peek into my brain</h1>
@@ -93,6 +93,20 @@ export default function Home() {
               bottomRight: true
             }}
           />
+
+          <ProjectCard
+            title="UniVerse"
+            description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
+            technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
+            githubUrl="https://github.com/mzhang055/UniVerse"
+            imageUrl="/universe.png"
+            stickers={{
+              //topRight: true,
+              bottomRight: true
+            }}
+          />
+
+          
           <ProjectCard
             title="nightlight"
             description="Help users navigate public transit safely by providing real-time risk reports on stops and stations, enabling users to share their location, report suspicious activity, and notify authorities to reduce harassment and improve security for everyone."
