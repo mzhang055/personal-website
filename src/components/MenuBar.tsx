@@ -1,18 +1,70 @@
+"use client"
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+const sections = [
+  { id: "home", label: "Home" },
+  { id: "projects", label: "Projects" },
+  { id: "about", label: "About" },
+];
+
 export default function MenuBar() {
+  const [active, setActive] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100; // 100px offset for navbar height
+      let current = sections[0].id;
+      for (const section of sections) {
+        const el = document.getElementById(section.id);
+        if (el && el.offsetTop <= scrollPosition) {
+          current = section.id;
+        }
+      }
+      setActive(current);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // set on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full p-2 sm:p-4 flex justify-between items-center bg-transparent sticky top-0 z-20">
-      <div className="text-black text-xl sm:text-2xl md:text-3xl font-bold font-jetbrains-mono">
-        <a href="#home">
-          <Image src="/char1.png" alt="Logo" width={68} height={68} className="w-22 h-22 object-contain cursor-pointer" />
-        </a>
+    <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center">
+      <div className="flex items-center bg-white/40 border-2 border-black rounded-full shadow-xl px-4 py-2 space-x-2 font-jetbrains-mono backdrop-blur-md relative z-10">
+        {sections.map((section) => {
+          const isActive = active === section.id;
+          return (
+            <div key={section.id} className="relative">
+              <a
+                href={`#${section.id}`}
+                className={`px-5 py-2 rounded-full font-bold transition-colors relative z-10 ${
+                  isActive
+                    ? "text-white"
+                    : "text-black hover:text-gray-700"
+                }`}
+                style={{ letterSpacing: "0.01em" }}
+              >
+                {section.label}
+              </a>
+              <AnimatePresence>
+                {isActive && (
+                  <motion.div
+                    layoutId="tab-highlight"
+                    className="absolute inset-0 rounded-full bg-black z-0"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+              </AnimatePresence>
+            </div>
+          );
+        })}
       </div>
-      <ul className="flex space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
-        <li><a href="#about" className="text-black text-base sm:text-lg md:text-xl lg:text-2xl font-jetbrains-mono hover:underline">About</a></li>
-        <li><a href="#projects" className="text-black text-base sm:text-lg md:text-xl lg:text-2xl font-jetbrains-mono hover:underline">Projects</a></li>
-        <li><a href="mailto:michellexy.zhang@mail.utoronto.ca" className="text-black text-base sm:text-lg md:text-xl lg:text-2xl font-jetbrains-mono hover:underline">Contact</a></li>
-      </ul>
-    </nav>
+    </div>
   );
 } 
