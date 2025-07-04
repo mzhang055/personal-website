@@ -72,6 +72,16 @@ export default function Home() {
       <div className="w-full max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard
+            title="Coming Soon"
+            description="A new project is on the way! Stay tuned."
+            technologies={["???"]}
+            githubUrl="https://github.com/mzhang055/twirl"
+            imageUrl="/twirl.png"
+            stickers={{
+              topLeft: true,
+            }}
+          />
+          <ProjectCard
             title="mock it"
             description="Instantly generate LaTeX mock tests from your worksheets or tests in &lt; 1 minute."
             technologies={["Typescript", "Next.js", "Python", "Docker", "FastAPI", "Google Cloud"]}
@@ -79,7 +89,7 @@ export default function Home() {
             githubUrl="https://github.com/mzhang055/mockmate"
             imageUrl="/mockit.png"
             stickers={{
-              topLeft: true,
+              topRight: true,
             }}
           />
           <ProjectCard
