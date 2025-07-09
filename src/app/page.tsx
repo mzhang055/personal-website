@@ -93,7 +93,7 @@ export default function Home() {
             }}
           />
           <ProjectCard
-            title="stocked"
+            title="Stocked"
             description="A tool that provides personalized stock recommendations, insights into market trends, and projections of potential investment outcomes."
             technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
             githubUrl="https://github.com/mzhang055/Stocked"
