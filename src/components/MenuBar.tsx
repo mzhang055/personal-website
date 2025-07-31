@@ -69,10 +69,10 @@ export default function MenuBar() {
         </div>
         {/* Social Icons */}
         <div className="flex items-center space-x-3 ml-4">
-          <a href="https://github.com/michellexyzhang" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/mzhang055" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="w-6 h-6 text-black hover:text-gray-700 transition-colors" />
           </a>
-          <a href="https://linkedin.com/in/michellexyzhang" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/mzhang055" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="w-6 h-6 text-blue-700 hover:text-blue-900 transition-colors" />
           </a>
         </div>

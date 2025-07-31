@@ -8,7 +8,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-6">
             <a 
-              href="https://github.com/michellexyzhang" 
+              href="https://github.com/mzhang055" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm font-jetbrains-mono hover:underline"
@@ -16,7 +16,7 @@ export default function Footer() {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/michellexyzhang" 
+              href="https://linkedin.com/in/mzhang055" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm font-jetbrains-mono hover:underline"

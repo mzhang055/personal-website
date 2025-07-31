@@ -75,7 +75,7 @@ export default function Home() {
             title="Coming Soon"
             description="A new project is on the way! Stay tuned."
             technologies={["???"]}
-            githubUrl="https://github.com/michellexyzhang/twirl"
+            githubUrl="https://github.com/mzhang055/twirl"
             imageUrl="/twirl.png"
             stickers={{
               topLeft: true,
@@ -86,7 +86,7 @@ export default function Home() {
             description="Instantly generate LaTeX mock tests from your worksheets or tests in &lt; 1 minute."
             technologies={["Typescript", "Next.js", "Python", "Docker", "FastAPI", "Google Cloud"]}
             demoUrl="https://simplymockit.com"
-            githubUrl="https://github.com/michellexyzhang/mockmate"
+            githubUrl="https://github.com/mzhang055/mockmate"
             imageUrl="/mockit.png"
             stickers={{
               topRight: true,
@@ -96,7 +96,7 @@ export default function Home() {
             title="Stocked"
             description="A tool that provides personalized stock recommendations, insights into market trends, and projections of potential investment outcomes."
             technologies={["Java", "Jsoup", "Maven", "ARIMA", "Alphavantage API"]}
-            githubUrl="https://github.com/michellexyzhang/Stocked"
+            githubUrl="https://github.com/mzhang055/Stocked"
             imageUrl="/stocked.png"
             stickers={{
               topRight: true
@@ -107,7 +107,7 @@ export default function Home() {
             title="UniVerse"
             description="A post-secondary planning app for high school students that offers personalized program recommendations, an interactive map of Ontario universities, grade tracking, and tools to explore programs and scholarships."
             technologies={["Java", "Jsoup", "MySQL", "XAMPP"]}
-            githubUrl="https://github.com/michellexyzhang/UniVerse"
+            githubUrl="https://github.com/mzhang055/UniVerse"
             imageUrl="/universe.png"
             stickers={{
               bottomLeft: true
