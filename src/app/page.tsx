@@ -52,6 +52,48 @@ export default function Home() {
         />
       </div>
 
+      {/* Currently Working On Section */}
+      <div id="currently" className="w-full relative flex items-center justify-center py-16">
+        <div className="text z-10 relative flex items-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-jetbrains-mono mb-0 flex items-center">
+            <span className="mr-[-0.2em]">recently i&apos;ve b</span>
+            <Image
+              src="/char3.png"
+              alt="Character 3"
+              width={250}
+              height={250}
+              className="w-[1.3em] h-auto hover:rotate-12 transition-transform duration-300"
+            />
+            <span className="ml-[-0.2em]">en</span>
+          </h1>
+        </div>
+      </div>
+
+      <div className="w-full max-w-7xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="border-2 border-black rounded-lg p-6 bg-white/40 backdrop-blur-sm hover:shadow-lg transition-shadow">
+            <h3 className="text-2xl font-bold font-jetbrains-mono mb-2">Stryde Health</h3>
+            <p className="text-lg font-jetbrains-mono">
+              Building adaptive cognitive assessment tools for patient recovery, backed by UofT Health Innovation Hub
+            </p>
+          </div>
+
+          <div className="border-2 border-black rounded-lg p-6 bg-white/40 backdrop-blur-sm hover:shadow-lg transition-shadow">
+            <h3 className="text-2xl font-bold font-jetbrains-mono mb-2">UofTHacks</h3>
+            <p className="text-lg font-jetbrains-mono">
+              Building the mobile app for hackers, organizers, and volunteers at UofTHacks 13!
+            </p>
+          </div>
+
+          <div className="border-2 border-black rounded-lg p-6 bg-white/40 backdrop-blur-sm hover:shadow-lg transition-shadow">
+            <h3 className="text-2xl font-bold font-jetbrains-mono mb-2">WON STUPIDD</h3>
+            <p className="text-lg font-jetbrains-mono">
+              Won third place (stupid) at the Toronto Stupid Hackathon for building a chrome extension that exposes what you say while on mute into your teams slack channel.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Projects Section */}
       <div id="projects" className="w-full relative flex items-center justify-center py-16">
         <div className="text z-10 relative flex items-center">

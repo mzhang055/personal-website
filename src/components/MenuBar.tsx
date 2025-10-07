@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const sections = [
   { id: "home", label: "Home" },
+  { id: "currently", label: "Currently" },
   { id: "projects", label: "Projects" },
   { id: "about", label: "About" },
 ];
@@ -32,17 +33,17 @@ export default function MenuBar() {
   }, []);
 
   return (
-    <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center">
-      <div className="flex items-center bg-white/40 border-2 border-black rounded-full shadow-xl px-4 py-2 space-x-2 font-jetbrains-mono backdrop-blur-md relative z-10">
+    <div className="fixed top-4 sm:top-8 left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center px-4 w-full max-w-fit">
+      <div className="flex flex-col sm:flex-row items-center bg-white/40 border-2 border-black rounded-full shadow-xl px-3 sm:px-4 py-2 gap-2 font-jetbrains-mono backdrop-blur-md relative z-10">
         {/* Navigation Tabs */}
-        <div className="flex space-x-2">
+        <div className="flex space-x-1 sm:space-x-2">
           {sections.map((section) => {
             const isActive = active === section.id;
             return (
               <div key={section.id} className="relative">
                 <a
                   href={`#${section.id}`}
-                  className={`px-5 py-2 rounded-full font-bold transition-colors relative z-10 ${
+                  className={`px-2 sm:px-5 py-1 sm:py-2 rounded-full font-bold transition-colors relative z-10 text-xs sm:text-base ${
                     isActive
                       ? "text-white"
                       : "text-black hover:text-gray-700"
@@ -68,15 +69,15 @@ export default function MenuBar() {
           })}
         </div>
         {/* Social Icons */}
-        <div className="flex items-center space-x-3 ml-4">
+        <div className="flex items-center space-x-2 sm:space-x-3 sm:ml-4">
           <a href="https://github.com/mzhang055" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <FaGithub className="w-6 h-6 text-black hover:text-gray-700 transition-colors" />
+            <FaGithub className="w-5 h-5 sm:w-6 sm:h-6 text-black hover:text-gray-700 transition-colors" />
           </a>
           <a href="https://linkedin.com/in/mzhang055" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <FaLinkedin className="w-6 h-6 text-blue-700 hover:text-blue-900 transition-colors" />
+            <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6 text-blue-700 hover:text-blue-900 transition-colors" />
           </a>
           <a href="https://x.com/michellexyzhang" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-            <FaXTwitter className="w-6 h-6 text-black hover:text-gray-700 transition-colors" />
+            <FaXTwitter className="w-5 h-5 sm:w-6 sm:h-6 text-black hover:text-gray-700 transition-colors" />
           </a>
         </div>
       </div>
