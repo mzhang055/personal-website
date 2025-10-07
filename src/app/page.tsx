@@ -27,28 +27,32 @@ export default function Home() {
           alt="Character 1"
           width={250}
           height={250}
-          className="absolute bottom-[70%] left-[3%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300"
+          className="absolute bottom-[70%] left-[3%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300 animate-float"
+          style={{ animationDelay: "0s" }}
         />
         <Image
           src="/char3.png"
           alt="Character 3"
           width={200}
           height={200}
-          className="absolute bottom-[50%] left-[23%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300"
+          className="absolute bottom-[50%] left-[23%] w-[25%] h-auto hover:rotate-12 transition-transform duration-300 animate-float"
+          style={{ animationDelay: "1s" }}
         />
         <Image
           src="/char2.png"
           alt="Character 2"
           width={400}
           height={400}
-          className="absolute bottom-[75%] right-[30%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300"
+          className="absolute bottom-[75%] right-[30%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300 animate-float"
+          style={{ animationDelay: "0.5s" }}
         />
         <Image
           src="/char4.png"
           alt="Character 4"
           width={250}
           height={250}
-          className="absolute bottom-[55%] right-[5%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300"
+          className="absolute bottom-[55%] right-[5%] w-[30%] h-auto hover:rotate-12 transition-transform duration-300 animate-float"
+          style={{ animationDelay: "1.5s" }}
         />
       </div>
 
