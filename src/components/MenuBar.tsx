@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const sections = [
   { id: "home", label: "Home" },
@@ -74,6 +74,9 @@ export default function MenuBar() {
           </a>
           <a href="https://linkedin.com/in/mzhang055" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="w-6 h-6 text-blue-700 hover:text-blue-900 transition-colors" />
+          </a>
+          <a href="https://x.com/michellexyzhang" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <FaXTwitter className="w-6 h-6 text-black hover:text-gray-700 transition-colors" />
           </a>
         </div>
       </div>
